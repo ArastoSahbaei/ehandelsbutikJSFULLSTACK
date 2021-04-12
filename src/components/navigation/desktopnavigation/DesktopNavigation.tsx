@@ -12,7 +12,7 @@ export const DesktopNavigation = () => {
 			<span className='shopButton' onClick={() => history.push(RoutingPath.shopView)}>shop</span>
 			<span className='galleryButton' onClick={() => history.push(RoutingPath.galleryView)}>gallery</span>
 			<span className='newsButton' onClick={() => history.push(RoutingPath.newsView)}>news</span>
-			<span className='signInButton' onClick={() => history.push(RoutingPath.signInView)}>signin</span>
+			<span className='signInButton' onClick={() => history.push(RoutingPath.signInView)}>sign in</span>
 		</div>
 	)
 }
