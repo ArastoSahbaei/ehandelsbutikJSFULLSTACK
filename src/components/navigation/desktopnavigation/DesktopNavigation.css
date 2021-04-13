@@ -15,7 +15,8 @@
 .shopButton,
 .galleryButton,
 .newsButton,
-.signInButton {
+.signInButton,
+.authUserNavigation {
 	justify-self: center;
 	align-self: center;
 	cursor: pointer;
@@ -35,5 +36,9 @@
 .newsButton {}
 
 .signInButton {
+	grid-column: 18/20;
+}
+
+.authUserNavigation {
 	grid-column: 18/20;
 }

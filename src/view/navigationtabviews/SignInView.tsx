@@ -1,24 +1,23 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import { UserContext } from '../../shared/provider/UserProvider'
+import { useHistory } from 'react-router-dom'
+import RoutingPath from '../../routes/RoutingPath'
 
 export const SignInView = () => {
-	const [username, setUsername] = useState<String>('Arasto')
-	const [password, setPassword] = useState<String>('')
+	const history = useHistory()
+	const [username, setUsername] = useState<string>('')
+	const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
 
-	const saveDataToBrowser = () => {
-		localStorage.setItem('username', 'arasto')
-	}
-
-	const removeDataFromBrowser = () => {
-		localStorage.removeItem('username')
+	const signIn = () => {
+		setAuthenticatedUser(username)
+		localStorage.setItem('username', username)
+		history.push(RoutingPath.homeView)
 	}
 
 	return (
 		<div>
-			<h1>{username}</h1>
 			<span>Username: </span> <input onChange={event => setUsername(event.target.value)} /> <br />
-			<span>Password: </span> <input onChange={event => setPassword(event.target.value)} />
-			<button onClick={() => saveDataToBrowser()}>SaveDataToBrowser</button>
-			<button onClick={() => removeDataFromBrowser()}>RemoveDataFromBrowser</button>
+			<button onClick={() => signIn()}>Sign in</button>
 		</div>
 	)
 }

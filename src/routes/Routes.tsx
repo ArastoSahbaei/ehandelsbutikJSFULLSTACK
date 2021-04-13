@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
+import { UserContext } from '../shared/provider/UserProvider'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { HomeView } from '../view/HomeView'
 import { GalleryView } from '../view/navigationtabviews/GalleryView'
@@ -8,6 +9,19 @@ import { SignInView } from '../view/navigationtabviews/SignInView'
 import RoutingPath from './RoutingPath'
 
 export const Routes = (props: { children?: React.ReactChild }) => {
+	const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
+
+	const checkIfUserIsAuthenticated = () => {
+		const getLocalStorage = localStorage.getItem('username')
+		if (getLocalStorage) {
+			setAuthenticatedUser(getLocalStorage)
+		}
+	}
+
+	useEffect(() => {
+		checkIfUserIsAuthenticated()
+	})
+
 	return (
 		<BrowserRouter>
 			{props.children}
