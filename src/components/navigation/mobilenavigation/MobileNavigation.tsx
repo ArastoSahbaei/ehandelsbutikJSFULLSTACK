@@ -5,13 +5,13 @@ import './MobileNavigation.css'
 import { BackDrop } from '../../backdrop/BackDrop'
 
 export const MobileNavigation = () => {
-	const [openDrawer, setOpenDrawer] = useState<boolean>(true)
+	const [openDrawer, setOpenDrawer] = useState<boolean>(false)
 
 	return (
 		<div>
 			<HamburgerButton drawerHandler={setOpenDrawer} />
 			<SideBar drawerIsOpen={openDrawer} drawerHandler={setOpenDrawer} />
-			{!openDrawer || <BackDrop />}
+			{!openDrawer || <BackDrop drawerHandler={setOpenDrawer} />}
 		</div>
 	)
 }
