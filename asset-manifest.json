@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/ehandelsbutik/static/css/main.3dd3cd7f.chunk.css",
+    "main.js": "/ehandelsbutik/static/js/main.f30a7fe3.chunk.js",
+    "main.js.map": "/ehandelsbutik/static/js/main.f30a7fe3.chunk.js.map",
+    "runtime-main.js": "/ehandelsbutik/static/js/runtime-main.7e1b3447.js",
+    "runtime-main.js.map": "/ehandelsbutik/static/js/runtime-main.7e1b3447.js.map",
+    "static/js/2.d194f9ab.chunk.js": "/ehandelsbutik/static/js/2.d194f9ab.chunk.js",
+    "static/js/2.d194f9ab.chunk.js.map": "/ehandelsbutik/static/js/2.d194f9ab.chunk.js.map",
+    "static/js/3.8f119c95.chunk.js": "/ehandelsbutik/static/js/3.8f119c95.chunk.js",
+    "static/js/3.8f119c95.chunk.js.map": "/ehandelsbutik/static/js/3.8f119c95.chunk.js.map",
+    "index.html": "/ehandelsbutik/index.html",
+    "static/css/main.3dd3cd7f.chunk.css.map": "/ehandelsbutik/static/css/main.3dd3cd7f.chunk.css.map",
+    "static/js/2.d194f9ab.chunk.js.LICENSE.txt": "/ehandelsbutik/static/js/2.d194f9ab.chunk.js.LICENSE.txt",
+    "static/media/logotype.8e6630e2.svg": "/ehandelsbutik/static/media/logotype.8e6630e2.svg",
+    "static/media/pokeball.94cd27f1.gif": "/ehandelsbutik/static/media/pokeball.94cd27f1.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7e1b3447.js",
+    "static/js/2.d194f9ab.chunk.js",
+    "static/css/main.3dd3cd7f.chunk.css",
+    "static/js/main.f30a7fe3.chunk.js"
+  ]
+}
